@@ -8,6 +8,7 @@ wget https://github.com/ComparativeGenomicsToolkit/cactus/releases/download/v2.9
 tar -xzf cactus-bin-v2.9.2.tar.gz
 cd cactus-bin-v2.9.2
 conda create -n cactus pip
+conda activate cactus
 pip install -U setuptools pip wheel
 pip install -U .
 pip install -U -r ./toil-requirement.txt
